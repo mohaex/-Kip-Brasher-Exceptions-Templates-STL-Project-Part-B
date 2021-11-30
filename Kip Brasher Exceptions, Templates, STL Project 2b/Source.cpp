@@ -12,12 +12,12 @@ using namespace std;
 template <class K>
 K half(K number)
 {
-   
+    return round(number) / 2.0;
 }
 
 int half(int intValue)
 {
-    
+    return static_cast<int>( round ( (intValue / 2.0) ) ); 
 }
 
 int main() 
@@ -28,7 +28,12 @@ int main()
 
     int intValue;
 
+    cout << half(a) << endl;
+    cout << half(b) << endl;
+    cout << half(c) << endl;
    
+    return 0;
+
     /*
     Ref:
     3.5
